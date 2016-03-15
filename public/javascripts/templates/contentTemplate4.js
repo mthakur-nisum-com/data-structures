@@ -1,0 +1,7 @@
+define(['handlebars'], function(Handlebars) {
+
+return Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+    return "<div class=\"large-12 columns\">\r\n	<div class=\"row\">\r\n		<div class=\"large-12 columns \" id=\"data-selection-sec\">\r\n			<div class=\"row\">\r\n				<div class=\"large-6 columns\">\r\n					<label for=\"manualData\">Do you want to enter elements please &#10004; the check box</label>\r\n				</div>\r\n				<div class=\"large-6 columns\">\r\n					<input type=\"checkbox\" id=\"manualData\" name=\"manualDataOption\" value=\"false\"/>\r\n				</div>\r\n			</div>\r\n		</div>\r\n		<div class=\"large-12 columns hide data-selection\">\r\n			<div class=\"row\">\r\n				<div class=\"large-6 columns\">\r\n					<label for=\"dataList\">please enter values seperated by commas</label>\r\n				</div>\r\n				<div class=\"large-6 columns\">\r\n					<input type=\"text\" id=\"dataList\" name=\"elementList\" value=\"\"/>\r\n				</div>\r\n			</div>\r\n			<div class=\"row key-section hide\">\r\n				<div class=\"large-6 columns\">\r\n					<label for=\"datakey\">please enter key</label>\r\n				</div>\r\n				<div class=\"large-6 columns\">\r\n					<input type=\"text\" id=\"datakey\" name=\"searchKey\" value=\"\"/>\r\n				</div>\r\n			</div>\r\n		</div>\r\n		<div class=\"large-12 columns\">\r\n			<div class=\"row collapse hide button-sec\">\r\n				<button type=\"button\" id=\"continueBtn\" class=\"medium\">continue</button>\r\n			</div>\r\n		</div>\r\n	</div>\r\n</div>";
+},"useData":true})
+
+});

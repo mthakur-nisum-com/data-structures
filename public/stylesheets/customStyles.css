@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #00B7FF;
+}
+#root #header {
+	margin-bottom: 20px;
+}
+#root #header ul {
+	display: inline-block;
+	margin: 0;
+}
+#root #header ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 15px 10px;
+	/* text-align: center; */
+	background: black;
+	margin-right: 20px;
+	color:#FFF;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.hide {
+	display: none;
+}
+#content {
+	height: 200px;
+}
+#content .list-section{
+	list-style: none;
+}
+#grid-view-list li {
+	list-style: none;
+	background: #000000;
+	position: absolute;
+	width: 60px !important;
+	height: 60px !important;
+	text-align: center !important;
+	padding-top: 17px !important;
+	cursor: pointer;
+	font-weight: bold;
+	color: #FFF;
+}

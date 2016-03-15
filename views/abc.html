@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Performing Linear Search of an Array</title>
+
+<script type = "text/javascript"> 
+<!--
+var a = [4,8,13,17,19,22,25,35,39,41,49,53,59,67,69,75,78,83,90,99]
+
+function SearchArray()
+{
+var searchNum = searchForm.inputVal.value;
+
+var position = Search( a, parseInt( searchNum ) );
+
+if ( position != -1 )
+searchForm.result.value = 
+"The number is in position " +( parseInt(position)+1);
+else
+searchForm.result.value = "The number is not found";
+}
+
+// Search "theArray" for the specified "key" value
+function Search( theArray, key ) 
+{ 
+for ( var n = 0; n < theArray.length; ++n ) 
+if ( theArray[ n ] == key )
+return n;
+
+return -1;
+}
+// -->
+</script>
+
+</head>
+
+<body>
+<h1>Perfoming Linear Search</h1>
+<form name = "searchForm" action = "">
+<p>Enter an Integer between 0 and 100 (excluding 0 and 100)<br />
+<input name = "inputVal" type = "text" />
+<input name = "search" type = "button" value = "Search" 
+onclick = "SearchArray()" /><br /></p>
+
+<p>Result<br />
+<input name = "result" type = "text" size = "30" /></p>
+</form>
+</body>
+</html>

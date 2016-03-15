@@ -1,0 +1,21 @@
+<div class="result-selection">
+	<div id="outputSection">
+		<ul class="list-section small-block-grid-{{resultObj.length}}">
+			{{#each resultObj}}
+				<li class="row">
+					<div class="large-12 columns service-section">
+						<label for="serviceType">{{type}}</label>
+						<input type="radio" id="serviceType" class="service-select" name="dataService" value="{{type}}"
+							{{#if hasOptions}}
+								{{else}}
+									disabled="disabled" 
+							{{/if}}
+						/>
+					</div>
+				</li>
+			{{/each}}
+		</ul>
+		
+	</div>
+</div>
+
